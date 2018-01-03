@@ -12,6 +12,10 @@ def index():
 def Contact():
     return render_template('contact.html',dev=var)
 
+@app.route('/drawing')
+def drawing():
+    return render_template()
+
 @app.route('/about/<string:job>/')
 def about(job):
     return render_template('about.html',jav=job)
